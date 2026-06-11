@@ -1,0 +1,63 @@
+{
+  "name": "@zerodb/queue",
+  "version": "0.1.0",
+  "description": "BullMQ-compatible job queue powered by ZeroDB — zero infrastructure, no Redis required",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/basic.test.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/basic.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "bullmq",
+    "bullmq-alternative",
+    "job-queue",
+    "task-queue",
+    "redis-alternative",
+    "message-queue",
+    "zerodb",
+    "ainative",
+    "event-driven",
+    "background-jobs",
+    "auto-provisioning",
+    "serverless-queue",
+    "claude",
+    "cursor",
+    "windsurf",
+    "queue",
+    "worker",
+    "jobs",
+    "serverless",
+    "no-redis"
+  ],
+  "author": "AINative Studio <hello@ainative.studio>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AINative-Studio/zerodb-queue.git"
+  },
+  "homepage": "https://zerodb.dev/queue",
+  "bugs": {
+    "url": "https://github.com/AINative-Studio/zerodb-queue/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {}
+}
