@@ -1,5 +1,5 @@
 {
-  "name": "@zerodb/queue",
+  "name": "zerodb-queue",
   "version": "0.1.0",
   "description": "BullMQ-compatible job queue powered by ZeroDB — zero infrastructure, no Redis required",
   "main": "dist/index.cjs",
